@@ -1,6 +1,6 @@
 package com.teachmeskills.lesson5.hometask;
 
-import java.util.Arrays;
+import static com.teachmeskills.lesson5.hometask.Utils.printMatrix;
 
 public class Task1 {
     public static void main(String[] args) {
@@ -24,8 +24,6 @@ public class Task1 {
                 }
             }
         }
-        for (String[] strings : chessBoard) {
-            System.out.println(Arrays.toString(strings));
-        }
+        printMatrix(chessBoard);
     }
 }

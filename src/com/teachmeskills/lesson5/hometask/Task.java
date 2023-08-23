@@ -1,7 +1,8 @@
 package com.teachmeskills.lesson5.hometask;
 
-import java.util.Arrays;
 import java.util.Scanner;
+
+import static com.teachmeskills.lesson5.hometask.Utils.printMatrix;
 
 public class Task {
     public static void main(String[] args) {
@@ -18,7 +19,8 @@ public class Task {
             }
         }
 
-        System.out.println("Initial array: " + Arrays.deepToString(array));
+        System.out.println("Initial array:");
+        printMatrix(array);
         System.out.println("Please, enter the number: ");
         int number = scn.nextInt();
 
@@ -30,6 +32,7 @@ public class Task {
             }
         }
 
-        System.out.println("Modified array: " + Arrays.deepToString(array));
+        System.out.println("Modified array:");
+        printMatrix(array);
     }
 }

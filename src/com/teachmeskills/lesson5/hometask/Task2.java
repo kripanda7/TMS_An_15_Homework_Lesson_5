@@ -1,6 +1,6 @@
 package com.teachmeskills.lesson5.hometask;
 
-import java.util.Arrays;
+import static com.teachmeskills.lesson5.hometask.Utils.printMatrix;
 
 public class Task2 {
     public static void main(String[] args) {
@@ -12,7 +12,8 @@ public class Task2 {
                 }
             }
         }
-        System.out.println("Array1: \n" + Arrays.deepToString(array1));
+        System.out.println("Array1:");
+        printMatrix(array1);
         int[][][] array2 = new int[3][3][3];
         for (int i = 0; i < array2.length; i++) {
             for (int j = 0; j < array2[i].length; j++) {
@@ -21,7 +22,8 @@ public class Task2 {
                 }
             }
         }
-        System.out.println("Array2: \n" + Arrays.deepToString(array2));
+        System.out.println("Array2:");
+        printMatrix(array2);
         int[][][] arrayResult = new int[3][3][3];
         for (int i = 0; i < arrayResult.length; i++) {
             for (int j = 0; j < arrayResult[i].length; j++) {
@@ -30,7 +32,7 @@ public class Task2 {
                 }
             }
         }
-        System.out.println(Arrays.deepToString(arrayResult));
-
+        System.out.println("Result:");
+        printMatrix(arrayResult);
     }
 }

@@ -3,6 +3,8 @@ package com.teachmeskills.lesson5.hometask;
 import java.util.Arrays;
 import java.util.Scanner;
 
+import static com.teachmeskills.lesson5.hometask.Utils.printMatrix;
+
 public class Task4 {
     public static void main(String[] args) {
         Scanner scn = new Scanner(System.in);
@@ -18,11 +20,11 @@ public class Task4 {
             }
         }
         for (int i = 0; i < array.length; i++) {
-            System.out.println(Arrays.toString(array[i]));
             if (i <= array[i].length - 1) {
                 diagonal[i] = array[i][i];
             }
         }
+        printMatrix(array);
         System.out.println("Diagonal: " + Arrays.toString(diagonal));
     }
 }

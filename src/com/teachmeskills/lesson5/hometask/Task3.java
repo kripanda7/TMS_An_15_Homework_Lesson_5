@@ -1,6 +1,6 @@
 package com.teachmeskills.lesson5.hometask;
 
-import java.util.Arrays;
+import static com.teachmeskills.lesson5.hometask.Utils.printMatrix;
 
 public class Task3 {
     public static void main(String[] args) {
@@ -10,7 +10,8 @@ public class Task3 {
                 array[i][j] = (int) (Math.random() * 10);
             }
         }
-        System.out.println("Array: \n" + Arrays.deepToString(array));
+        System.out.println("Array:");
+        printMatrix(array);
         int sum = 0;
         for (int[] firstLayer : array) {
             for (int secondLayer : firstLayer) {
